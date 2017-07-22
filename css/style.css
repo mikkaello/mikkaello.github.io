@@ -1,0 +1,55 @@
+.container{
+    width: 200px;
+    min-height: 200px;
+    background-color: palegoldenrod;
+}
+/*.container ul:hover{*/
+    /*color: darkseagreen;*/
+/*}*/
+.view_container{
+    border: solid 2px black;
+}
+.control_container{
+    display: flex;
+    border: solid 2px black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.main_wrapper{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    background-color: fuchsia;
+    padding: 10px ;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.control_button{
+    width: 140px;
+    cursor: pointer;
+}
+.first_element_chosen{
+    color: green;
+}
+.mydiv{
+    background-color: brown;
+    width: 400px;
+    border: 3px green double;
+    border-radius: 20px;
+}
+
+.test {
+    float: right;
+}
+.testAAA{
+    float: left;
+}
+.around{
+    background-color: grey;
+
+}
