@@ -17,5 +17,7 @@ for (var i = 0; i < allDivs.length; i++){
 
         }
 
-
+        window.onbeforeunload = function () {
+            return "Вы уверены?";
+        }
 }})();
