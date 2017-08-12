@@ -4,20 +4,79 @@
     <meta charset="UTF-8">
     <title>Ключевое слово this</title>
     <style>
-        div {
+        .container div {
             background-color:green;
             display: block;
             height: 100px;
             width: 100px;
             margin: 10px;
         }
+        .wrap div {
+            background-color: darkviolet;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+        }
+        .wrap div{
+            position: relative;
+        }
+        .hidecontent {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .tooltip-content {
+            position: absolute;
+
+            top: 30px;
+            left: 20px;
+            border: 1px solid #ccc;
+            padding: 3px;
+
+        }
+#main-div{
+    background-color: darkgrey;
+}
+        #main-div span{
+            background-color: beige;
+            position: relative;
+        }
+
+
+
     </style>
     <script src="js/home_work6.js"></script>
 </head>
 <body>
+
+
+
+
+<div class="container">
+
 <div></div>
 <div></div>
 <div></div>
 <div></div>
 <div></div>
+</div>
+
+
+<div class="wrap">
+    <div><button class="hidecontent">Hide</button></div>
+    <div><button class="hidecontent">Hide</button></div>
+    <div><button class="hidecontent">Hide</button></div>
+    <div><button class="hidecontent">Hide</button></div>
+    <div><button class="hidecontent">Hide</button></div>
+</div>
+
+
+<div id="main-div">
+    <span data-tooltip="наведите">наведите</span>
+    <span data-tooltip="для">для</span>
+    <span data-tooltip="подсказки">подсказки</span>
+</div>
+
+
 </body>
